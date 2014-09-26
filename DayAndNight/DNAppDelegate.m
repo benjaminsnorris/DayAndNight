@@ -18,6 +18,9 @@
     
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[DNModeViewController new]];
     
+    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
